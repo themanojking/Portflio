@@ -51,7 +51,7 @@ export const skill = [
         id:'8',
         icon: <BiLogoPostgresql />,
         tittle:'POSTGRESSQL',
-        color:"text-violet-500",
+        color:"text-blue-500",
     },
     {
         id:'9',
