@@ -5,7 +5,7 @@ function LetsTalk() {
   return (
     <>
       <div className="mt-20 mx-10">
-        <h1 className="md:text-6xl text-3xl font-bold">Let's Talk</h1>
+        <h1 className="md:text-6xl text-3xl text-violet-800 font-bold">Let's Talk</h1>
         <h2 className="md:text-2xl text-xl font-semibold mt-3">
           Here, we're all ears and ready to connect with you. Whether you have
           questions, ideas, or just want to say hello, we'd love to hear from
@@ -16,7 +16,7 @@ function LetsTalk() {
           <form>
             <div className="flex flex-wrap md:flex-nowrap md:gap-16">
               <div>
-                <label className="block text-2xl font-bold">Name</label>
+                <label className="block text-2xl text-violet-800 font-bold">Name</label>
                 <input
                   placeholder="Name"
                   type="text"
@@ -25,7 +25,7 @@ function LetsTalk() {
                 />
               </div>
               <div className="mt-4 md:mt-0">
-                <label className="block text-2xl font-bold">Email</label>
+                <label className="block text-2xl text-violet-800 font-bold">Email</label>
                 <input
                   placeholder="Email"
                   type="email"
@@ -37,7 +37,7 @@ function LetsTalk() {
             <div className="md:mt-16 mt-5">
               <div className="flex flex-wrap md:flex-nowrap  md:gap-16">
                 <div>
-                  <label className="block text-2xl font-bold">Phone</label>
+                  <label className="block text-2xl text-violet-800 font-bold">Phone</label>
                   <input
                     placeholder="Type The Number"
                     type="Number"
@@ -46,7 +46,7 @@ function LetsTalk() {
                   />
                 </div>
                 <div className="mt-4 md:mt-0 ">
-                  <label className="block text-2xl font-bold">Message</label>
+                  <label className="block text-2xl text-violet-800 font-bold">Message</label>
                   <input
                     placeholder="Tell About Your Project"
                     type="text"
@@ -56,7 +56,7 @@ function LetsTalk() {
                 </div>
               </div>
             </div>
-            <button className="flex items-center gap-2 text-2xl font-bold bg-red-500 text-white px-3 py-2 rounded mt-5">
+            <button className="flex items-center gap-2 text-2xl font-bold bg-violet-800 text-white px-3 py-2 rounded mt-5">
               Send <BsFillSendCheckFill />
             </button>
           </form>

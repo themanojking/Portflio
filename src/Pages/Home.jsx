@@ -3,23 +3,24 @@ import codeImage from "../assets/code2.png";
 
 import { FaLinkedin, FaGithub, FaInstagramSquare } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { BsPersonLinesFill, BsFillSendCheckFill } from "react-icons/bs";
+import { BsPersonLinesFill } from "react-icons/bs";
 import { RiDownloadCloud2Fill } from "react-icons/ri";
-
 import About from "./About";
 import Skill from "./Skill";
 import LetsTalk from "./LetsTalk";
 import Myproject from "./Myproject";
+import Navbar from "../Components/Navbar";
 
 function Home() {
   return (
     <>
       <div className="md:mx-10">
+        <Navbar/>
         <div className="flex flex-wrap justify-center items-center gap-10 p-4 flex-col md:flex-row mt-10">
           <div>
-            <div className="text-center">
+            <div className="text-center lg:text-left">
               <h1 className="md:text-6xl  text-3xl  font-bold">
-                Hi, I'm <span>Manoj Kumar</span>
+                Hi, I'm <span className="text-violet-800">Manoj Kumar</span>
               </h1>
               <h1 className="md:text-6xl text-3xl  font-bold">
                 Web Designer &
@@ -44,16 +45,18 @@ function Home() {
 
             <div className="flex justify-center lg:justify-normal gap-8 md:mt-8 mt-6">
               <div>
-                <button className="flex items-center gap-2 bg-red-400 px-3 py-2 rounded md:text-2xl font-bold">
+                <button className="flex items-center gap-2 bg-violet-800 text-white px-3 py-2 rounded md:text-2xl font-bold">
                   Contact Me{" "}
                   <BsPersonLinesFill className="flex items-center mt-1" />
                 </button>
               </div>
               <div>
-                <button className="flex items-center gap-2 bg-red-400 px-3 py-2 rounded md:text-2xl font-bold">
+                <a href="\Resume Manoj.pdf" download="Manojresume.pdf">
+                <button className="flex items-center gap-2 bg-violet-800 text-white px-3 py-2 rounded md:text-2xl font-bold">
                   Get Resume{" "}
                   <RiDownloadCloud2Fill className="flex items-center mt-1" />
                 </button>
+                </a>
               </div>
             </div>
           </div>

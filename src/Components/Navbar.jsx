@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IoIosPerson } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState();
@@ -19,22 +20,33 @@ function Navbar() {
         </div>
 
         <nav className="lg:flex hidden items-center gap-16">
-          <h2 className="text-xl font-bold">Home</h2>
-          <h2 className="text-xl font-bold">About</h2>
-          <h2 className="text-xl font-bold">Skills</h2>
-          <h2 className="text-xl font-bold">Contact</h2>
+          <Link to="/">
+            <h2 className="text-xl font-bold hover:text-violet-800">Home</h2>
+          </Link>
+          <Link to="/about">
+            <h2 className="text-xl font-bold hover:text-violet-800">About</h2>
+          </Link>
+          <Link to="/skills">
+            <h2 className="text-xl font-bold hover:text-violet-800">Skills</h2>
+          </Link>
+          <Link to="/letstalk">
+            <h2 className="text-xl font-bold hover:text-violet-800">Contact</h2>
+          </Link>
         </nav>
 
-        <button className="lg:hidden text-2xl flex items-center" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <FaTimes /> : <FaBars /> }
+        <button
+          className="lg:hidden text-2xl flex items-center"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <FaTimes /> : <FaBars />}
         </button>
 
         {isOpen && (
           <div className="absolute top-16 left-0 w-full lg:hidden flex flex-col items-center gap-5 py-5 ">
-          <h2 className="text-xl font-bold">Home</h2>
-          <h2 className="text-xl font-bold">About</h2>
-          <h2 className="text-xl font-bold">Skills</h2>
-          <h2 className="text-xl font-bold">Contact</h2>
+            <h2 className="text-xl font-bold hover:text-violet-800">Home</h2>
+            <h2 className="text-xl font-bold hover:text-violet-800">About</h2>
+            <h2 className="text-xl font-bold hover:text-violet-800">Skills</h2>
+            <h2 className="text-xl font-bold hover:text-violet-800">Contact</h2>
           </div>
         )}
       </header>
