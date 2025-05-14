@@ -28,7 +28,7 @@ function Myproject() {
                 data-aos-delay="100"
                 data-aos-duration="600"
                 key={prop.id}
-                className="border lg:w-[28rem] md:w-[22rem] w-[20rem] rounded px-3 py-2 shadow-lg shadow-violet-600"
+                className="border lg:w-[28rem] md:w-[22rem]  rounded px-3 py-2 shadow-lg shadow-violet-600"
               >
                 <img src={prop.img} alt="projects" className=""></img>
                 <h1 className="text-3xl text-violet-800 font-bold text-center">
