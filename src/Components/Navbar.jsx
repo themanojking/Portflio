@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <>
-      <header className="flex justify-between items-center p-5 w-full">
+      <header className="container mx-auto flex justify-between items-center p-5 w-full bg-white shadow-md shadow-violet-800 rounded-b-2xl ">
         <div className="flex items-center gap-2">
           <div className="text-2xl font-bold flex items-center">
             <IoIosPerson />
@@ -49,6 +49,7 @@ function Navbar() {
             <h2 className="text-xl font-bold hover:text-violet-800">Contact</h2>
           </div>
         )}
+        
       </header>
     </>
   );

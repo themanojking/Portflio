@@ -8,6 +8,7 @@ import Myproject from './Pages/Myproject';
 import LetsTalk from './Pages/LetsTalk';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from './Pages/Footer';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     
   return (
     <>
-     <div className='mx-2 lg:mx-5'>
+     <div className=''>
         <BrowserRouter>
            <Routes>
               <Route path='/' element={<Home />}></Route>
@@ -24,6 +25,7 @@ function App() {
               <Route path='/skills' element={<Skill />}></Route>
               <Route path='/myproject' element={<Myproject/>}></Route>
               <Route path='/letstalk' element={<LetsTalk/>}></Route>
+              <Route path='/footer' element={<Footer />}></Route>
            </Routes>
         </BrowserRouter>
      </div>

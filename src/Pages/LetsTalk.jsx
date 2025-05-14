@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { BsFillSendCheckFill } from "react-icons/bs";
+import { toast, ToastContainer } from "react-toastify";
 
 function LetsTalk() {
   const nameRef = useRef();
@@ -10,17 +11,48 @@ function LetsTalk() {
   const handlesend = (e) => {
     e.preventDefault();
 
-    const name = nameRef.current.value;
-    const email = emailRef.current.value;
-    const phone = phoneRef.current.value;
-    const message = messageRef.current.value;
+    const name = nameRef.current.value.trim();
+    const email = emailRef.current.value.trim();
+    const phone = phoneRef.current.value.trim();
+    const message = messageRef.current.value.trim();
 
-    const fullMessage = `Hello,I'm ${name}.My email is ${email}, phone:${phone}.Message :${message}`;
+    const fullMessage = `👋 Hello, I'm ${name}.\n📧 Email: ${email}\n📱 Phone: ${phone}\n💬 Message: ${message}`;
+
     const whatsappURL = `https://wa.me/9344245993?text=${encodeURIComponent(
       fullMessage
     )}`;
 
+    if (!name || !email || !phone || !message) {
+      toast.error("Please fill out all fields !.");
+      return;
+    }
+
+    const emailpattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailpattern.test(email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
+    if (phone.length < 10) {
+      toast.error("Please enter 10 digits number");
+      return;
+    }
+
+    if(phone.length > 10 )
+    {
+      toast.error("Only 10 digits allowed");
+      return;
+    }
+
     window.open(whatsappURL, "_blank");
+
+    nameRef.current.value = "";
+    emailRef.current.value = "";
+    phoneRef.current.value = "";
+    messageRef.current.value = "";
+
+    toast.success("Message Sent!");
   };
   return (
     <>
@@ -80,7 +112,7 @@ function LetsTalk() {
                   <label className="block text-2xl text-violet-800 font-bold">
                     Message
                   </label>
-                  <input
+                  <textarea
                     ref={messageRef}
                     placeholder="Tell About Your Project"
                     type="text"
@@ -90,9 +122,11 @@ function LetsTalk() {
                 </div>
               </div>
             </div>
+            <ToastContainer position="bottom-right" autoClose={3000} />
             <button
               className="flex items-center gap-2 text-2xl font-bold bg-violet-800 text-white px-3 py-2 rounded mt-5"
               onClick={handlesend}
+              type="submit"
             >
               Send <BsFillSendCheckFill />
             </button>
