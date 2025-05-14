@@ -16,7 +16,7 @@ function LetsTalk() {
     const message = messageRef.current.value;
 
     const fullMessage = `Hello,I'm ${name}.My email is ${email}, phone:${phone}.Message :${message}`;
-    const whatsappURL = `https://wa.me/919952857016?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/9344245993?text=${encodeURIComponent(
       fullMessage
     )}`;
 
