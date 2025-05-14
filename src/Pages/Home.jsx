@@ -1,5 +1,5 @@
 import React from "react";
-import codeImage from "../assets/code2.png";
+import codeImage from "/assets/code2.png"
 
 import { FaLinkedin, FaGithub, FaInstagramSquare } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
