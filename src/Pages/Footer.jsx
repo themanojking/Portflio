@@ -13,7 +13,7 @@ function Footer() {
           <FaRegCopyright className="text-black" />
           <h2 className="">Copyright 2025@MK</h2>
         </div>
-        <div className="flex justify-center lg:justify-normal gap-5 ">
+        <div className="flex justify-center lg:justify-normal gap-5 mt-3 md:mt-0 ml-5 lg:ml-0">
           <a
             href="https://www.linkedin.com/in/manojkumar2005"
             target="_blank"
