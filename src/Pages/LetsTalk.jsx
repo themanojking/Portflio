@@ -4,7 +4,7 @@ import {  BsFillSendCheckFill } from "react-icons/bs";
 function LetsTalk() {
   return (
     <>
-      <div className="mt-20 ">
+      <div className="mt-20 mx-2">
         <h1 className="md:text-6xl text-3xl text-violet-800 font-bold">Let's Talk</h1>
         <h2 className="md:text-2xl text-xl font-semibold mt-3">
           Here, we're all ears and ready to connect with you. Whether you have
