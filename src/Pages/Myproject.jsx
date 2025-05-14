@@ -39,14 +39,18 @@ function Myproject() {
                 </h3>
                 <div className="flex justify-center gap-5 mt-5 p-2">
                   <div>
-                    <button className="flex items-center gap-2 bg-violet-800 px-3 py-2 rounded-lg font-bold text-lg text-white">
+                    <a href={prop.github} target="_blank" rel="noopener noreferrer">
+                    <button className="flex items-center gap-2 bg-violet-800 px-3 py-2 rounded-lg font-bold text-lg text-white" >
                       <FaGithub /> GitHub
                     </button>
+                    </a>
                   </div>
                   <div>
+                    <a href={prop.demo} target="_blank" rel="noopener noreferrer">
                     <button className="flex items-center gap-2 bg-violet-800 px-3 py-2 rounded-lg font-bold text-lg text-white">
                       <MdLiveTv /> Demo
                     </button>
+                    </a>
                   </div>
                 </div>
               </div>
