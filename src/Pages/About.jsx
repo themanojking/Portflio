@@ -12,7 +12,7 @@ function About() {
         >
           <h1 className="text-5xl font-bold">About Me</h1>
         </div>
-        <div className=" flex flex-col  lg:flex-row justify-center items-center gap-8 p-2 mt-5">
+        <div className=" flex flex-col  lg:flex-row justify-center items-center gap-8 p-2 mt-5 lg:mt-0">
           <div>
             <h1 className="text-3xl text-violet-800 font-bold">WHO I AM?</h1>
             <p className="lg:text-xl md:text-2xl text-lg font-semibold leading-relaxed mt-3">

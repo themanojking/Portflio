@@ -16,7 +16,7 @@ function App() {
     
   return (
     <>
-     <div className='mx-2'>
+     <div className='mx-2 lg:mx-5'>
         <BrowserRouter>
            <Routes>
               <Route path='/' element={<Home />}></Route>

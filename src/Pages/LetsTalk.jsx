@@ -1,11 +1,33 @@
-import React from "react";
-import {  BsFillSendCheckFill } from "react-icons/bs";
+import React, { useRef } from "react";
+import { BsFillSendCheckFill } from "react-icons/bs";
 
 function LetsTalk() {
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const phoneRef = useRef();
+  const messageRef = useRef();
+
+  const handlesend = (e) => {
+    e.preventDefault();
+
+    const name = nameRef.current.value;
+    const email = emailRef.current.value;
+    const phone = phoneRef.current.value;
+    const message = messageRef.current.value;
+
+    const fullMessage = `Hello,I'm ${name}.My email is ${email}, phone:${phone}.Message :${message}`;
+    const whatsappURL = `https://wa.me/919952857016?text=${encodeURIComponent(
+      fullMessage
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+  };
   return (
     <>
       <div className="mt-20 mx-2">
-        <h1 className="md:text-6xl text-3xl text-violet-800 font-bold">Let's Talk</h1>
+        <h1 className="md:text-6xl text-3xl text-violet-800 font-bold">
+          Let's Talk
+        </h1>
         <h2 className="md:text-2xl text-xl font-semibold mt-3">
           Here, we're all ears and ready to connect with you. Whether you have
           questions, ideas, or just want to say hello, we'd love to hear from
@@ -16,8 +38,11 @@ function LetsTalk() {
           <form>
             <div className="flex flex-wrap md:flex-nowrap md:gap-16">
               <div>
-                <label className="block text-2xl text-violet-800 font-bold">Name</label>
+                <label className="block text-2xl text-violet-800 font-bold">
+                  Name
+                </label>
                 <input
+                  ref={nameRef}
                   placeholder="Name"
                   type="text"
                   className="border-2 p-1 placeholder:p-1 text-xl font-semibold focus:outline-none rounded mt-3 lg::w-[30rem] md:w-[20rem] h-[3rem]"
@@ -25,8 +50,11 @@ function LetsTalk() {
                 />
               </div>
               <div className="mt-4 md:mt-0">
-                <label className="block text-2xl text-violet-800 font-bold">Email</label>
+                <label className="block text-2xl text-violet-800 font-bold">
+                  Email
+                </label>
                 <input
+                  ref={emailRef}
                   placeholder="Email"
                   type="email"
                   className="border-2 p-1 placeholder:p-1 text-xl font-semibold focus:outline-none rounded mt-3 lg:w-[30rem] md:w-[20rem] h-[3rem]"
@@ -37,8 +65,11 @@ function LetsTalk() {
             <div className="md:mt-16 mt-5">
               <div className="flex flex-wrap md:flex-nowrap  md:gap-16">
                 <div>
-                  <label className="block text-2xl text-violet-800 font-bold">Phone</label>
+                  <label className="block text-2xl text-violet-800 font-bold">
+                    Phone
+                  </label>
                   <input
+                    ref={phoneRef}
                     placeholder="Type The Number"
                     type="Number"
                     className="border-2 p-1 placeholder:p-1 text-xl font-semibold focus:outline-none rounded mt-3 lg:w-[30rem] md:w-[20rem] h-[3rem]"
@@ -46,8 +77,11 @@ function LetsTalk() {
                   />
                 </div>
                 <div className="mt-4 md:mt-0 ">
-                  <label className="block text-2xl text-violet-800 font-bold">Message</label>
+                  <label className="block text-2xl text-violet-800 font-bold">
+                    Message
+                  </label>
                   <input
+                    ref={messageRef}
                     placeholder="Tell About Your Project"
                     type="text"
                     className="border-2 p-1 placeholder:text-xl font-semibold  focus:outline-none rounded mt-3 lg:w-[30rem] md:w-[20rem] w-[20rem] h-[6rem]"
@@ -56,7 +90,10 @@ function LetsTalk() {
                 </div>
               </div>
             </div>
-            <button className="flex items-center gap-2 text-2xl font-bold bg-violet-800 text-white px-3 py-2 rounded mt-5">
+            <button
+              className="flex items-center gap-2 text-2xl font-bold bg-violet-800 text-white px-3 py-2 rounded mt-5"
+              onClick={handlesend}
+            >
               Send <BsFillSendCheckFill />
             </button>
           </form>
