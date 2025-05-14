@@ -18,7 +18,7 @@ function Myproject() {
           </h3>
         </div>
 
-        <div className="mt-10 p-2 md:p-0">
+        <div className="mt-10 ">
           <div className="flex flex-wrap justify-center lg:gap-10 gap-7 ">
             {project.map((prop) => (
               <div
