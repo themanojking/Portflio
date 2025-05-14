@@ -122,7 +122,7 @@ function LetsTalk() {
                 </div>
               </div>
             </div>
-            <ToastContainer position="bottom-right" autoClose={3000} />
+            <ToastContainer position="bottom-left" autoClose={4000} />
             <button
               className="flex items-center gap-2 text-2xl font-bold bg-violet-800 text-white px-3 py-2 rounded mt-5"
               onClick={handlesend}
