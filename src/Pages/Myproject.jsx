@@ -19,7 +19,7 @@ function Myproject() {
         </div>
 
         <div className="mt-10 ">
-          <div className="flex flex-wrap justify-center lg:gap-10 gap-7 ">
+          <div className="flex flex-wrap justify-center lg:gap-10 gap-7 p-3 ">
             {project.map((prop) => (
               <div
                 data-aos="fade-right"
