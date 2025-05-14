@@ -42,8 +42,8 @@ function Navbar() {
         </button>
 
         {isOpen && (
-          <div className="absolute top-16 left-0 w-full lg:hidden flex flex-col items-center gap-5 py-5 ">
-            <h2 className="text-xl font-bold hover:text-violet-800">Home</h2>
+          <div className="absolute top-16 left-0 w-full lg:hidden bg-white flex flex-col items-center gap-5 py-5 ">
+            <h2 className="text-xl font-bold hover:text-violet-800" >Home</h2>
             <h2 className="text-xl font-bold hover:text-violet-800">About</h2>
             <h2 className="text-xl font-bold hover:text-violet-800">Skills</h2>
             <h2 className="text-xl font-bold hover:text-violet-800">Contact</h2>

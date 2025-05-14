@@ -16,7 +16,7 @@ function App() {
     
   return (
     <>
-     <div>
+     <div className='mx-2'>
         <BrowserRouter>
            <Routes>
               <Route path='/' element={<Home />}></Route>

@@ -14,7 +14,7 @@ import Navbar from "../Components/Navbar";
 function Home() {
   return (
     <>
-      <div className="md:mx-10">
+      <div className="">
         <Navbar/>
         <div className="flex flex-wrap justify-center items-center gap-10 p-4 flex-col md:flex-row mt-10">
           <div>

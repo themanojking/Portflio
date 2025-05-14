@@ -7,14 +7,18 @@ function Myproject() {
   return (
     <>
       <div className="mt-16">
-        <div className="text-center space-y-2">
+        <div
+          className="text-center space-y-2"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <h1 className="md:text-5xl text-3xl  font-bold">My Recent Works</h1>
-          <h3 className="md:text-2xl  font-semibold ">
+          <h3 className="md:text-2xl text-sm  font-semibold ">
             Here are a few projects I've worked on recently
           </h3>
         </div>
 
-        <div className="mt-10 ">
+        <div className="mt-10 p-2 md:p-0">
           <div className="flex flex-wrap justify-center lg:gap-10 gap-7 ">
             {project.map((prop) => (
               <div
@@ -24,7 +28,7 @@ function Myproject() {
                 data-aos-delay="100"
                 data-aos-duration="600"
                 key={prop.id}
-                className="border lg:w-[28rem] md:w-[22rem] w-[20rem] rounded px-3 py-2 shadow-lg shadow-violet-600 transition-transform duration-300 hover:scale-110"
+                className="border lg:w-[28rem] md:w-[22rem] w-[20rem] rounded px-3 py-2 shadow-lg shadow-violet-600"
               >
                 <img src={prop.img} alt="projects" className=""></img>
                 <h1 className="text-3xl text-violet-800 font-bold text-center">
