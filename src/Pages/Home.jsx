@@ -1,6 +1,6 @@
 import React from "react";
 import codeImage from "/assets/codeImage3.png";
-import { FaLinkedin, FaGithub, FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagramSquare,FaAngleDoubleDown } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { RiDownloadCloud2Fill } from "react-icons/ri";
@@ -16,7 +16,7 @@ function Home() {
     <>
       <Navbar />
       <section id="Home" className="pt-5">
-        <div className="flex flex-wrap justify-center items-center gap-10 p-4 flex-col md:flex-row mt-24 md:mt-10">
+        <div className="flex flex-wrap justify-center items-center gap-10 p-4 flex-col md:flex-row mt-16 md:mt-20 lg:mt-10">
           <div>
             <div className="text-center lg:text-left">
               <h1 className="md:text-6xl  text-3xl  font-bold">
@@ -94,6 +94,9 @@ function Home() {
             />
           </div>
         </div>
+        <div className="flex justify-center text-3xl text-violet-800 animate-bounce">
+            <FaAngleDoubleDown />
+          </div>
       </section>
       <section id="About" className="pt-10">
         <About />
