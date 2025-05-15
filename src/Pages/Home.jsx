@@ -94,7 +94,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="flex justify-center text-3xl text-violet-800 animate-bounce">
+        <div className="flex justify-center text-3xl text-violet-800 animate-bounce z-50">
             <FaAngleDoubleDown />
           </div>
       </section>

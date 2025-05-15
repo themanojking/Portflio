@@ -11,7 +11,7 @@ function Footer() {
         </div>
         <div className="flex items-center gap-2 text-xl font-bold">
           <FaRegCopyright className="text-black" />
-          <h2 className="">Copyright 2025@MK</h2>
+          <h2 className="">Copyright 2025@Manoj</h2>
         </div>
         <div className="flex justify-center lg:justify-normal gap-5 mt-3 md:mt-0 ml-5 lg:ml-0 ">
           <a
