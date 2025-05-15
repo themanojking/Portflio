@@ -61,7 +61,7 @@ function Navbar() {
             </a>
             <a href="#Myproject" onClick={() => setIsOpen(false)}>
               <h2 className="text-xl font-bold hover:text-violet-800">
-                Projects
+                Project
               </h2>
             </a>
             <a href="#Letstalk" onClick={() => setIsOpen(false)}>
