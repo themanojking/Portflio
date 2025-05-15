@@ -1,5 +1,5 @@
 import React from "react";
-import code1Image from "/assets/code1.png";
+import code1Image from "/assets/codeImage4.png";
 
 function About() {
   return (
@@ -30,7 +30,7 @@ function About() {
             </p>
           </div>
           <div className="">
-            <img src={code1Image} className="w-[250rem]" alt="Code" />
+            <img src={code1Image} className="w-[250rem] p-5" alt="Code" />
           </div>
         </div>
       </div>

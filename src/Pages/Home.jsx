@@ -1,5 +1,5 @@
 import React from "react";
-import codeImage from "/assets/code2.png";
+import codeImage from "/assets/codeImage3.png";
 import { FaLinkedin, FaGithub, FaInstagramSquare } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsPersonLinesFill } from "react-icons/bs";
@@ -89,7 +89,7 @@ function Home() {
           <div className="">
             <img
               src={codeImage}
-              className="w-[35rem] mt-2 bg-red-200"
+              className="w-[35rem] mt-2 p-2"
               alt="Code"
             />
           </div>
