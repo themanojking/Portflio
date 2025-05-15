@@ -4,7 +4,7 @@ import code1Image from "/assets/code1.png";
 function About() {
   return (
     <>
-      <div className="lg:mt-20 mx-5">
+      <div className="lg:mt-20 mx-4">
         <div
           className="text-center"
           data-aos="fade-up"
