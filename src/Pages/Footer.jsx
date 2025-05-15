@@ -5,7 +5,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 function Footer() {
   return (
     <>
-      <div className="flex flex-wrap justify-center md:gap-5 lg:gap-28 items-center mt-10 space-y-1 md:space-y-0 text-violet-800 p-2 ">
+      <div className="flex flex-wrap justify-center md:justify-between md:gap-5 lg:gap-28 items-center mt-10 space-y-1 md:space-y-0 text-violet-800 p-5">
         <div>
           <h2 className="text-lg font-bold">Designed and Developed by Manoj </h2>
         </div>
@@ -13,7 +13,7 @@ function Footer() {
           <FaRegCopyright className="text-black" />
           <h2 className="">Copyright 2025@MK</h2>
         </div>
-        <div className="flex justify-center lg:justify-normal gap-5 mt-3 md:mt-0 ml-5 lg:ml-0">
+        <div className="flex justify-center lg:justify-normal gap-5 mt-3 md:mt-0 ml-5 lg:ml-0 ">
           <a
             href="https://www.linkedin.com/in/manojkumar2005"
             target="_blank"
