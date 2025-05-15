@@ -107,9 +107,8 @@ function Home() {
       <section id="Myproject" className="pt-10">
         <Myproject />
       </section>
-      <section id="Myproject">
         <Footer />
-      </section>
+      
     </>
   );
 }
