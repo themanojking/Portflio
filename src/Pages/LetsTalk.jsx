@@ -56,7 +56,7 @@ function LetsTalk() {
   };
   return (
     <>
-      <div className="mt-20 mx-2">
+      <div className="mt-20 mx-2 lg:mx-5">
         <h1 className="md:text-6xl text-3xl text-violet-800 font-bold">
           Let's Talk
         </h1>
