@@ -77,7 +77,7 @@ function Home() {
                 </a>
               </div>
               <div>
-                <a href="\Resume Manoj.pdf" download="Manojresume.pdf">
+                <a href="\Manojkumar Jaganathan_res.pdf.pdf" download="Manojresume.pdf">
                   <button className="flex items-center gap-2 bg-violet-800 text-white px-3 py-2 rounded md:text-2xl font-bold">
                     Get Resume{" "}
                     <RiDownloadCloud2Fill className="flex items-center mt-1" />
